@@ -1,0 +1,327 @@
+#section-6 {
+  background-color: #f6f6f6;
+  min-height: 845px;
+}
+
+#section-6 .title-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 188px;
+  padding-top: 10px;
+}
+
+#section-6 .title-section p {
+  font-family: ChronicleDisplay-Roman !important;
+  font-size: 32px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.31;
+  letter-spacing: normal;
+  text-align: center;
+  color: #1a1a19;
+  margin: 0;
+  padding: 0;
+}
+
+#section-6 .container-slider-posts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 491px;
+}
+
+#section-6 .container-slider-posts .arrow-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 400px) {
+  #section-6 .container-slider-posts .arrow-left {
+    display: none;
+  }
+}
+
+#section-6 .container-slider-posts .arrow-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 400px) {
+  #section-6 .container-slider-posts .arrow-right {
+    display: none;
+  }
+}
+
+#section-6 .container-slider-posts .slider-container-3 {
+  max-width: 80%;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+  #section-6 .container-slider-posts .slider-container-3 {
+    max-width: 92%;
+  }
+}
+
+@media (max-width: 400px) {
+  #section-6 .container-slider-posts .slider-container-3 {
+    max-width: 90%;
+  }
+}
+
+#section-6 .container-slider-posts .slider-container-3 .slides .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#section-6 .container-slider-posts .slider-container-3 .slides .container .posts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-width: 288px;
+  min-height: 464px;
+  max-width: 455px;
+  max-height: 491px;
+  padding: 35px;
+  background-color: white;
+  -webkit-box-shadow: 1px 21px 20px -25px rgba(0, 0, 0, 0.75);
+          box-shadow: 1px 21px 20px -25px rgba(0, 0, 0, 0.75);
+  margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+  #section-6 .container-slider-posts .slider-container-3 .slides .container .posts {
+    padding: 24px;
+    height: 464px;
+  }
+}
+
+#section-6 .container-slider-posts .slider-container-3 .slides .container .posts .trending {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#section-6 .container-slider-posts .slider-container-3 .slides .container .posts .trending:after {
+  content: attr(trending-attr);
+  font-family: Avenir;
+  font-size: 15px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  color: #1a1a19;
+  padding: 7px 14px;
+  background-color: #ffffff;
+  width: 89px;
+  height: 38px;
+  padding: 10p;
+  margin: 10px;
+  cursor: pointer;
+}
+
+#section-6 .container-slider-posts .slider-container-3 .slides .container .posts .featured-img {
+  min-width: 388px;
+  min-height: 238px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 500px) {
+  #section-6 .container-slider-posts .slider-container-3 .slides .container .posts .featured-img {
+    min-width: 240px;
+    min-height: 147px;
+  }
+}
+
+#section-6 .container-slider-posts .slider-container-3 .slides .container .posts .content {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+#section-6 .container-slider-posts .slider-container-3 .slides .container .posts .content .post-link .tittle,
+#section-6 .container-slider-posts .slider-container-3 .slides .container .posts .content .subtitle,
+#section-6 .container-slider-posts .slider-container-3 .slides .container .posts .content .text {
+  -webkit-margin-before: 0em;
+          margin-block-start: 0em;
+  -webkit-margin-after: 0em;
+          margin-block-end: 0em;
+  padding: 0;
+  padding-bottom: 12px;
+}
+
+#section-6 .container-slider-posts .slider-container-3 .slides .container .posts .content .post-link {
+  text-decoration: none;
+}
+
+#section-6 .container-slider-posts .slider-container-3 .slides .container .posts .content .post-link .title {
+  font-family: ChronicleDisplay-Roman !important;
+  font-size: 32px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.31;
+  letter-spacing: normal;
+  color: #1a1a19;
+}
+
+#section-6 .container-slider-posts .slider-container-3 .slides .container .posts .content .subtitle {
+  font-family: HarmoniaSansPro !important;
+  font-size: 15px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  color: #1a1a19;
+}
+
+#section-6 .container-slider-posts .slider-container-3 .slides .container .posts .content .text {
+  font-family: HarmoniaSansPro !important;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  color: #1a1a19;
+}
+
+#section-6 .container-slider-posts .slider-container-3 .slides .container .post-1 .featured-img {
+  background-image: url("https://cdn.wallpapersafari.com/94/80/2q6aHh.jpg");
+}
+
+#section-6 .container-slider-posts .slider-container-3 .slides .container .post-2 .featured-img {
+  background-image: url("http://www.samuipropertylocator.com/wp-content/uploads/2019/05/4-bedroom-luxury-Koh-Samui-property-open-space-in-living-room.jpg");
+}
+
+#section-6 .see-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 0;
+  min-height: 166px;
+  margin-top: -20px;
+}
+
+#section-6 .see-more .button {
+  font-family: HarmoniaSansPro-SemiBd !important;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #1a1a19;
+  border: solid 1px #1a1a19;
+  padding: 14px 0px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  width: 140px;
+}
+
+.prev-3,
+.next-3 {
+  cursor: pointer;
+}
+
+.prev-3:before {
+  content: "\f104";
+  font-family: FontAwesome !important;
+  font-size: 50px;
+  font-weight: 100;
+  color: #1a1a19 !important;
+  z-index: 100;
+}
+
+@media only screen and (max-width: 768px) {
+  .prev-3:before {
+    font-size: 30px;
+  }
+}
+
+.next-3:before {
+  content: "\f105";
+  font-family: FontAwesome !important;
+  font-size: 50px;
+  font-weight: 100;
+  color: #1a1a19 !important;
+  z-index: 100;
+}
+
+@media only screen and (max-width: 768px) {
+  .next-3:before {
+    font-size: 30px;
+  }
+}
+/*# sourceMappingURL=6-section.css.map */

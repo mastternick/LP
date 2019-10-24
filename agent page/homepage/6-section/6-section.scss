@@ -1,0 +1,321 @@
+#section-6 {
+    background-color: #f6f6f6;
+    // height: 100vh;
+    min-height: 845px;
+
+    @media (min-width: 600px) {}
+
+
+    .title-section {
+        // height: 19vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // padding-top: 50px;
+        // margin: 0;
+        // padding: 0;
+        min-height: 188px;
+        padding-top: 10px;
+
+
+        p {
+            font-family: ChronicleDisplay-Roman !important;
+            font-size: 32px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.31;
+            letter-spacing: normal;
+            text-align: center;
+            color: #1a1a19;
+
+            margin: 0;
+            padding: 0;
+        }
+
+    }
+
+    .container-slider-posts {
+        // height: 67vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        // width: 100%;
+        min-height: 491px;
+
+        .arrow-left {
+            display: flex;
+            // align-items: center;
+            order: 1;
+            flex: 1;
+            justify-content: center;
+
+            @media (max-width: 400px) {
+                display: none;
+            }
+        }
+
+        .arrow-right {
+            display: flex;
+            // align-items: center;
+            order: 3;
+            flex: 1;
+            justify-content: center;
+
+            @media (max-width: 400px) {
+                display: none;
+            }
+        }
+
+
+        .slider-container-3 {
+            max-width: 80%;
+
+            @media (min-width: 1024px) and (max-width: 1200px) {
+                max-width: 92%;
+            }
+
+            // @media (min-width: 768px) and (max-width: 1024px){
+            //     max-width: 700px;
+            // }
+
+            // @media (min-width: 600px) and (max-width: 768px){
+            //     max-width: 600px;
+            // }
+
+            @media (max-width: 400px) {
+                max-width: 90%;
+            }
+
+
+            order: 2;
+            flex: 2;
+            display: flex;
+            flex-wrap: wrap;
+
+            .slides {
+
+
+                .container {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    align-items: center;
+                    // height: 90vh;
+                    // height: 100%;
+                    // max-width: 100%;
+
+                    .posts {
+                        display: flex;
+                        flex-direction: column;
+
+                        min-width: 288px;
+                        min-height: 464px;
+
+                        max-width: 455px;
+                        max-height: 491px;
+
+                        padding: 35px;
+
+                        @media (max-width: 600px) {
+                            padding: 24px;
+                            height: 464px;
+                        }
+
+                        background-color: white;
+
+                        box-shadow: 1px 21px 20px -25px rgba(0, 0, 0, 0.75);
+                        margin-bottom: 20px;
+
+                        .trending {
+                            display: flex;
+                            justify-content: flex-end;
+
+                            &:after {
+                                content: attr(trending-attr);
+                                font-family: Avenir;
+                                font-size: 15px;
+                                font-weight: 500;
+                                font-style: normal;
+                                font-stretch: normal;
+                                line-height: 1.67;
+                                letter-spacing: normal;
+                                color: #1a1a19;
+                                padding: 7px 14px;
+                                background-color: #ffffff;
+                                width: 89px;
+                                height: 38px;
+                                padding: 10p;
+                                margin: 10px;
+                                cursor: pointer;
+
+                            }
+                        }
+
+                        .featured-img {
+                            min-width: 388px;
+                            min-height: 238px;
+
+
+
+
+                            @media (max-width: 500px) {
+                                min-width: 240px;
+                                min-height: 147px;
+                            }
+
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                        }
+
+                        .content {
+
+                            margin-top: 40px;
+                            margin-bottom: 40px;
+
+                            .post-link .tittle,
+                            .subtitle,
+                            .text {
+                                margin-block-start: 0em;
+                                margin-block-end: 0em;
+                                padding: 0;
+                                padding-bottom: 12px;
+                            }
+
+                            .post-link {
+                                text-decoration: none;
+
+                                .title {
+                                    font-family: ChronicleDisplay-Roman !important;
+                                    font-size: 32px;
+                                    font-weight: normal;
+                                    font-style: normal;
+                                    font-stretch: normal;
+                                    line-height: 1.31;
+                                    letter-spacing: normal;
+                                    color: #1a1a19;
+                                }
+                            }
+
+                            .subtitle {
+                                font-family: HarmoniaSansPro !important;
+                                font-size: 15px;
+                                font-weight: bold;
+                                font-style: normal;
+                                font-stretch: normal;
+                                line-height: 1.67;
+                                letter-spacing: normal;
+                                color: #1a1a19;
+                            }
+
+                            .text {
+                                font-family: HarmoniaSansPro !important;
+                                font-size: 15px;
+                                font-weight: normal;
+                                font-style: normal;
+                                font-stretch: normal;
+                                line-height: 1.67;
+                                letter-spacing: normal;
+                                color: #1a1a19;
+                            }
+
+                        }
+
+
+
+                    }
+
+                    .post-1 {
+                        .featured-img {
+                            background-image: url("https://cdn.wallpapersafari.com/94/80/2q6aHh.jpg");
+                        }
+                    }
+
+                    .post-2 {
+                        .featured-img {
+                            background-image: url("http://www.samuipropertylocator.com/wp-content/uploads/2019/05/4-bedroom-luxury-Koh-Samui-property-open-space-in-living-room.jpg");
+                        }
+                    }
+                }
+            }
+
+
+
+
+
+            & .slide-1 {}
+
+            & .slide-2 {}
+
+        }
+    }
+
+    .see-more {
+        // height: 14vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // padding-bottom: 40px;
+        margin: 0;
+        padding: 0;
+        min-height: 166px;
+        margin-top: -20px;
+
+        .button {
+
+            font-family: HarmoniaSansPro-SemiBd !important;
+            font-size: 14px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: #1a1a19;
+
+            // background-color: #ffffff;
+            border: solid 1px #1a1a19;
+            padding: 14px 0px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            width: 140px;
+
+
+        }
+    }
+
+}
+
+
+
+.prev-3,
+.next-3 {
+    cursor: pointer;
+}
+
+.prev-3:before {
+    content: "\f104";
+    font-family: FontAwesome !important;
+    font-size: 50px;
+    font-weight: 100;
+    color: #1a1a19 !important;
+    z-index: 100;
+
+    @media only screen and (max-width: 768px) {
+        font-size: 30px;
+    }
+}
+
+.next-3:before {
+    content: "\f105";
+    font-family: FontAwesome !important;
+    font-size: 50px;
+    font-weight: 100;
+    color: #1a1a19 !important;
+    z-index: 100;
+
+    @media only screen and (max-width: 768px) {
+        font-size: 30px;
+    }
+}

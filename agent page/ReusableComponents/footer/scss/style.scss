@@ -1,0 +1,350 @@
+@font-face {
+    font-family: ChronicleDisplay-Roman;
+    src: url(../fonts/ChronicleDisplayRoman.otf);
+}
+
+.wrapper {
+    width: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+#nc0175yxr32h6c19cd8xb7dtcng3hew8df3txgncndjjhgfb73nc .footer {
+    width: 100%;
+    background-color: #000;
+
+    &-container {
+        padding: 53px 15px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+        @media (min-width: 1134px) {
+            padding: 100px 185px;
+        }
+
+        @media (min-width: 869px) {
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+
+        }
+
+    }
+
+    &-col1 {
+        width: 288px;
+        max-width: 100%;
+
+        @media (min-width: 866px) {
+            width: 382px;
+            max-width: 100%;
+        }
+
+        @media (max-width: 866px) {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &-logo {
+            height: 51px;
+
+
+            margin-bottom: 26px;
+            transition: transform 0.1s;
+
+
+            @media (min-width: 866px) {
+                height: 68px;
+                margin-bottom: 24px;
+            }
+
+            &:hover {
+                transform: scale(1.1, 1.1);
+                cursor: pointer;
+            }
+        }
+
+        &-text {
+            font-family: Avenir;
+            font-size: 14px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.71;
+            letter-spacing: normal;
+            color: #ffffff;
+
+            padding-bottom: 51px;
+
+            @media (min-width: 866px) {
+
+                font-family: Avenir;
+                font-size: 15px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.67;
+                letter-spacing: normal;
+                color: #ffffff;
+
+                padding-bottom: 59px;
+            }
+        }
+
+        &-socialbar {
+            display: none;
+
+            @media (min-width: 866px) {
+                display: block;
+            }
+
+            &-text {
+                font-family: Avenir;
+                font-size: 14px;
+                font-weight: 900;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                color: #ffffff;
+
+                padding-right: 28px;
+            }
+
+            &-link {
+                margin-right: 40px;
+                text-decoration: none;
+                color: #fff;
+
+                &:hover {
+                    color: darken(#fff, 20%);
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+            }
+
+            &-logo {
+                height: 15px;
+                color: #fff;
+                transition: transform 0.1s;
+
+                &:hover {
+                    transform: scale(1.2, 1.2);
+                }
+            }
+        }
+    }
+
+
+
+    &-col2 {
+        width: 288px;
+        max-width: 100%;
+
+        @media (min-width: 866px) {
+            width: 382px;
+            max-width: 100%;
+        }
+
+        @media (max-width: 866px) {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &-title {
+
+            font-family: ChronicleDisplay-Roman;
+            font-size: 32px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.31;
+            letter-spacing: normal;
+            color: #ffffff;
+
+            margin-top: 0;
+            padding-top: 0;
+            padding-bottom: 0;
+            margin-bottom: 26px;
+
+            @media (min-width: 869px) {
+                font-family: Avenir;
+                font-size: 32px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 0.69;
+                letter-spacing: normal;
+                color: #ffffff;
+
+                margin-top: 0;
+                padding-top: 0;
+                padding-bottom: 0;
+                margin-bottom: 44px;
+            }
+        }
+
+        &-text {
+            font-family: Avenir;
+            font-size: 14px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.71;
+            letter-spacing: normal;
+            color: #ffffff;
+
+            padding-bottom: 15px;
+
+            @media (min-width: 869px) {
+                font-family: Avenir;
+                font-size: 15px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.67;
+                letter-spacing: normal;
+                color: #ffffff;
+
+                padding-bottom: 30px;
+            }
+        }
+
+        &-input-text {
+            font-family: Avenir;
+            font-size: 14px;
+            font-weight: 300;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #ffffff;
+
+            height: 41.5px;
+            width: 100%;
+            border: 0;
+            background-color: transparent;
+            border-bottom: 1px solid #fff;
+
+            margin-bottom: 26px;
+
+            @media (min-width: 869px) {
+                margin-bottom: 44.5px;
+            }
+        }
+
+        &-input-submit {
+            font-family: Avenir;
+            font-size: 14px;
+            font-weight: 900;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #ffffff;
+
+            padding: 12px 32px;
+            background-color: transparent;
+            border: 0;
+            border: 1px solid #fff;
+
+            transition: all 0.1s;
+
+            &:hover {
+                color: #000;
+                background-color: #fff;
+                cursor: pointer;
+            }
+
+            @media (max-width: 866px) {
+                margin-bottom: 51px;
+            }
+        }
+
+        &-socialbar {
+            display: block;
+
+            @media (min-width: 866px) {
+                display: none;
+            }
+
+            &-text {
+                font-family: Avenir;
+                font-size: 14px;
+                font-weight: 900;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                color: #ffffff;
+
+                padding-bottom: 16px;
+            }
+
+            &-link {
+                padding-right: 40px;
+                text-decoration: none;
+
+                &:last-child {
+                    padding-right: 0;
+                }
+
+            }
+
+            &-logo {
+                height: 15px;
+                transition: transform 0.1s;
+
+                &:hover {
+                    transform: scale(1.2, 1.2);
+                }
+            }
+        }
+    }
+
+    &-row {
+
+        text-align: right;
+
+        padding-right: 15px;
+        padding-bottom: 53px;
+        @media (min-width: 1134px) {
+            padding-right: 185px;
+            padding-bottom: 47px;
+        }
+        
+        
+        display: none;
+        @media (min-width: 866px) {
+            display: block;
+        }
+
+        &-link {
+            font-family: Avenir;
+            font-size: 14px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: 2px;
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.2s;
+            padding-right: 27px;
+
+            &:last-child {
+                padding-right: 0px;
+            }
+
+            &:hover {
+                color: darken(#fff, 18%);
+            }
+        }
+    }
+}

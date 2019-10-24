@@ -1,0 +1,491 @@
+#section-4 {
+
+
+  .slider-container-2 { 
+    width: 100%;
+    margin: 0 auto;
+
+    .slides {
+      height: 90vh;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: cover;
+      font-family: ChronicleDisplay-Roman !important;
+
+      @media only screen and (max-width: 768px) {
+        background-size: auto 70%;
+        background-position: top;
+      }
+
+      @media only screen and (max-width: 400px) and (min-height: 800px) {
+        background-size: auto 70%;
+      }
+
+      @media only screen and (max-width: 400px) and (max-height: 800px) {
+        background-size: auto 60%;
+      }
+
+      @media only screen and (max-width: 320px) {
+        background-size: auto 55%;
+      }
+
+
+      & .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        // height: 90vh;
+        height: 100%;
+        max-width: 100%;
+
+        & .bottom-blocks {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+
+          @media only screen and (max-width: 768px) {
+            flex-direction: column-reverse;
+          }
+
+
+
+          & .box {
+            padding: 23px;
+            background-color: white;
+            flex: 1;
+
+            & .pad {
+
+              @media only screen and (min-width: 768px) {
+                padding: 12px 52px 2px 54px;
+              }
+
+              & .title {
+                font-family: ChronicleDisplay-Roman !important;
+                font-size: 32px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                color: #1a1a19;
+                margin-bottom: 7px;
+              }
+
+              & .price {
+
+                font-family: Avenir !important;
+                font-size: 14px;
+                font-weight: 900;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                color: #1a1a19;
+                margin-bottom: 7px;
+
+              }
+
+              & .description {
+                font-family: Avenir !important;
+                font-size: 15px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.67;
+                letter-spacing: normal;
+                color: #1a1a19;
+
+              }
+
+              & .info {
+
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                // opacity: 0.5;
+                margin-bottom: 20px;
+
+                & .icon-and-text {
+                  display: flex;
+                  padding-right: 20px;
+
+                  @media only screen and (max-width: 768px) {
+                    padding: 0;
+                    display: contents;
+                  }
+
+                  & .icon1,
+                  .icon2,
+                  .icon3 {
+                    @media only screen and (max-width: 768px) {
+                      margin-right: 5px;
+                    }
+                  }
+
+                  & .icon1,
+                  .icon2,
+                  .icon3 {
+                    @media only screen and (min-width: 768px) {
+                      margin-right: 12px;
+                    }
+                  }
+
+                  & .icon1 {
+                    max-width: 23.9px;
+                    max-height: 13.8px;
+                  }
+
+                  & .icon2 {
+                    max-width: 23.9px;
+                    max-height: 14.4px;
+                  }
+
+                  & .icon3 {
+                    max-width: 15px;
+                    max-height: 15px;
+                  }
+
+                  & .text {
+                    margin: 0 0 0;
+                    font-family: Avenir !important;
+                    font-size: 14px;
+                    font-weight: normal;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    color: #1a1a19;
+                    margin-right: 18px;
+                  }
+                }
+              }
+
+              & .link {
+                font-family: Avenir !important;
+                font-size: 14px;
+                font-weight: 900;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                color: #292826;
+                text-decoration: none;
+
+
+                & i {
+                  padding-left: 4px;
+                  font-size: 16px;
+                  font-weight: bold;
+                }
+              }
+            }
+          }
+
+          & .arrows-container {
+            display: flex;
+            flex: 2;
+            justify-content: flex-end;
+            align-items: flex-end;
+
+            & .arrows {
+              display: flex;
+              justify-content: space-between;
+              width: 160px;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              align-items: center;
+              padding: 0px 60px 35px 0px;
+
+              @media only screen and (max-width: 768px) {
+                padding: 0px 15px 20px 0px;
+                width: 70px;
+              }
+
+              & .prev-2,
+              .next-2 {
+                cursor: pointer;
+              }
+
+              & .prev-2:before {
+                content: "\f104";
+                font-family: FontAwesome;
+                font-size: 50px;
+                font-weight: 100;
+                color: #ffffff !important;
+                z-index: 100;
+
+                @media only screen and (max-width: 768px) {
+                  font-size: 30px;
+                }
+              }
+
+              & .next-2:before {
+                content: "\f105";
+                font-family: FontAwesome;
+                font-size: 50px;
+                font-weight: 100;
+                color: #ffffff !important;
+                z-index: 100;
+
+                @media only screen and (max-width: 768px) {
+                  font-size: 30px;
+                }
+              }
+
+
+            }
+          }
+
+        }
+
+      }
+
+
+
+    }
+
+    & .slide-1 {
+      background-image: url("http://www.samuipropertylocator.com/wp-content/uploads/2019/05/4-bedroom-luxury-Koh-Samui-property-open-space-in-living-room.jpg");
+    }
+
+    & .slide-2 {
+      background-image: url("http://www.samuipropertylocator.com/wp-content/uploads/2016/10/Koh-Samui-private-villas-living-room.jpg");
+    }
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//   #Properties3 {
+//     $txt-color: #1a1a19;
+
+//     .wrapper-content {
+//       padding: 0 16px 80px 16px;
+//       display: flex;
+//       margin: 0 auto;
+//       flex-flow: column;
+//       .container {
+//         width: 288px;
+//         height: auto;
+//         margin: 55px auto 0 auto;
+//       }
+//       #first-row-mobile {
+//         margin-top: 44px;
+//       }
+//     }
+//     @mixin background($url) {
+//       background-image: $url;
+//       background-position: center;
+//       background-size: cover;
+//     }
+
+//     .container-image {
+//       width: 288;
+//       position: relative;
+//       height: 181px;
+
+//       .img-1 {
+//         @include background(
+//           url("https://odis.homeaway.com/odis/listing/dce3c293-91d7-4d9a-91b3-eed5415d9968.c10.jpg")
+//         );
+//       }
+
+//       .img-2 {
+//         @include background(
+//           url("http://luxuryliving.com/wp-content/uploads/2015/01/samui-duo-slider.jpg")
+//         );
+//       }
+
+//       .img-3 {
+//         @include background(
+//           url("https://www.corinthia.com/application/files/1915/0454/1817/corinthia-hotel-royal-penthouse-terrace-nighttime.jpg")
+//         );
+//       }
+
+//       .img-4 {
+//         @include background(
+//           url("https://stevebuchanan.files.wordpress.com/2011/03/whiteinterior1.jpg")
+//         );
+//       }
+
+//       .img-5 {
+//         @include background(
+//           url("http://luxuryliving.com/wp-content/uploads/2015/01/samui-duo-slider.jpg")
+//         );
+//       }
+
+//       .img-6 {
+//         @include background(
+//           url("https://www.corinthia.com/application/files/1915/0454/1817/corinthia-hotel-royal-penthouse-terrace-nighttime.jpg")
+//         );
+//       }
+//     }
+
+//     .image {
+//       width: inherit;
+//       height: inherit;
+//       position: relative;
+//     }
+
+//     .hover-button {
+//       margin: 0;
+//       opacity: 0;
+//       border: solid 1px white;
+//       color: white;
+//       padding: 12px 47px;
+//       text-decoration: none;
+//     }
+
+//     .price {
+//       position: absolute;
+//       background-color: white;
+//       padding: 10px 15px;
+//       margin: 0;
+//       right: 0;
+//       top: 0;
+//       font-size: 14px;
+//     }
+
+//     .overlay {
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
+//       background-color: rgba(0, 0, 0, 0);
+//       position: absolute;
+//       left: 0;
+//       right: 0;
+//       bottom: 0;
+//       top: 0;
+//     }
+
+//     .text-about {
+//       margin: 0;
+//       width: 288px;
+//       margin-top: 42px;
+
+//       .title {
+//         color: $txt-color;
+//         margin: 0;
+//         font-weight: normal;
+//       }
+
+//       .description {
+//         color: $txt-color;
+//         margin: 10px 0;
+//         font-size: 15px;
+//       }
+//     }
+
+//     .icons {
+//       max-width: 288px;
+//       display: flex;
+//       flex-direction: row;
+//       justify-content: flex-start;
+//       opacity: 0.5;
+//       margin-bottom: 9px;
+//       :nth-child(2){
+//         margin-right: 6px;
+//       }
+
+//       .icon1 {
+//         max-width: 23.9px;
+//         max-height: 13.8px;
+//         margin-right: 12px;
+//       }
+
+//       .icon2 {
+//         max-width: 23.9px;
+//         max-height: 14.4px;
+//         margin-right: 12px;
+//       }
+
+//       .icon3 {
+//         max-width: 15px;
+//         max-height: 15px;
+//         margin-right: 12px;
+//       }
+
+//       .text {
+//         margin: 0 0 0;
+//         font-size: 14px;
+//         margin-right: 18px;
+//       }
+
+//       .icon-and-text {
+//         display: flex;
+//       }
+//     }
+//   }
+//   @media (min-width: 600px) {
+//     #Properties3 {
+//       .wrapper-content {
+//         display: flex;
+//         max-width: 1200px;
+//         flex-flow: row;
+//         justify-content: space-around;
+//         flex-wrap: wrap;
+//         padding-top: 17px;
+
+//         .container {
+//           width: auto;
+//           margin-left: 0;
+//           margin-right: 0;
+//           padding: 0 20px;
+//         }
+
+//         .container-image {
+//           width: 330px;
+//           height: 207px;
+
+//           &:hover {
+//             .hover-button {
+//               opacity: 1;
+//             }
+
+//             .price {
+//               visibility: hidden;
+//             }
+//           }
+//         }
+
+//         .overlay {
+//           &:hover {
+//             background-color: rgba(0, 0, 0, 0.8);
+//           }
+//         }
+
+//         .text-about {
+//           width: 330px;
+//         }
+
+//         .icons {
+//           max-width: 298px;
+//           margin-bottom: 28px;
+//         }
+//       }
+//     }
+
+//   }

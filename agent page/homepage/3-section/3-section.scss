@@ -1,0 +1,143 @@
+#section-3 {
+
+    // overflow: hidden;
+
+
+    .about {
+        display: flex;
+        min-height: 90vh;
+        flex-direction: row;
+
+        @media only screen and (max-width: 768px) {
+            flex-direction: column;
+        }
+
+
+
+        .photo {
+
+            @media only screen and (max-width: 768px) {
+                min-height: 80vh;
+            }
+
+
+
+            flex: 2;
+            display: flex;
+
+            background-image: url("https://i.ibb.co/dmHc0Q0/profile-photo.jpg");
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: cover;
+
+            & img {}
+        }
+
+        .description {
+            @media only screen and (max-width: 768px) {
+                min-height: 50vh;
+            }
+
+            @media only screen and (max-width: 400px) {
+                min-height: 60vh;
+            }
+
+            @media only screen and (max-width: 320px) {
+                min-height: 70vh;
+            }
+
+            display: flex;
+            flex: 3;
+            justify-content: center;
+            padding: 23px;
+
+            .text {
+                display: flex;
+                flex-direction: column;
+                max-width: 401px;
+                align-content: center;
+                justify-content: center;
+
+                & .name {
+                    font-family: ChronicleDisplay-Roman !important;
+                    font-size: 62px;
+                    font-weight: normal;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    color: #1a1a19;
+
+                    @media only screen and (max-width: 768px) {
+                        font-size: 32px;
+                        line-height: 1.31;
+                        margin-bottom: 8px;
+                    }
+
+                }
+
+                & .title {
+                    font-family: Avenir !important;
+                    font-size: 20px;
+                    font-weight: 300;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: 1.75;
+                    letter-spacing: normal;
+                    color: #1a1a19;
+                    border-bottom: solid 1px #1a1a1921;
+                    margin-block-start: 0em;
+                    margin-block-end: 10px;
+                    padding-bottom: 5px;
+
+                    @media only screen and (max-width: 768px) {
+                        line-height: 1.5;
+                        margin-block-end: 25px;
+                        padding-bottom: 25px;
+                    }
+                }
+
+                & .details {
+                    font-family: Avenir !important;
+                    font-size: 15px;
+                    font-weight: normal;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: 1.67;
+                    letter-spacing: normal;
+                    color: #1a1a19;
+                    padding-bottom: 20px;
+
+                    @media only screen and (max-width: 768px) {
+                        font-size: 14px;
+                        line-height: 1.71;
+                    }
+
+                }
+
+                & .button {
+
+                    font-family: Avenir !important;
+                    font-size: 14px;
+                    font-weight: 900;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    color: #1a1a19;
+
+                    background-color: #ffffff;
+                    border: solid 1px #1a1a19;
+                    padding: 14px 0px;
+                    text-align: center;
+                    text-decoration: none;
+                    cursor: pointer;
+                    width: 140px;
+
+
+                }
+            }
+        }
+
+    }
+}

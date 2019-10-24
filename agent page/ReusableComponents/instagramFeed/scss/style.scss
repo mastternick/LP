@@ -1,0 +1,232 @@
+@font-face {
+    font-family: ChronicleDisplay-Roman;
+    src: url(../fonts/ChronicleDisplayRoman.otf);
+}
+
+.wrapper {
+    width: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+#g976405ynmwd93ueg46vn8yreuy4n8ruhnfe3ug87hfe3uni .igFeed {
+    @media (min-width: 576px) {
+        padding-bottom: 49px;
+    }
+
+    &-header {
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-right: 16px;
+        padding-left: 16px;
+        margin-top: 58px;
+        margin-bottom: 66px;
+
+        @media (min-width: 576px) {
+            margin-top: 71px;
+            margin-bottom: 76px;
+        }
+    }
+
+    &-title {
+        font-family: ChronicleDisplay-Roman;
+        font-size: 32px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.31;
+        letter-spacing: normal;
+        text-align: center;
+        color: #1a1a19;
+    }
+
+    &-description {
+        font-family: Avenir;
+        font-size: 14px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.71;
+        letter-spacing: normal;
+        text-align: center;
+        color: #1a1a19;
+
+        @media (min-width: 576px) {
+            font-size: 15px;
+            line-height: 1.67;
+        }
+
+        width: 479px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    &-container {
+        width: 1440px;
+        max-width: 100%;
+        height: 149px;
+        padding: 0px 0px;
+        margin: 0 auto;
+
+        @media (min-width: 576px) {
+            height: 233px;
+        }
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &-post {
+        height: 100%;
+        width: 161px;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        transition: all 0.3s;
+        z-index: 1;
+        background-color: transparent;
+
+        @media (min-width: 576px) {
+            width: 252px;
+        }
+
+        @media (min-width: 992px) {
+            &:hover {
+                transform: scale(1.1, 1.1) translateY(-11px);
+                z-index: 4;
+            }
+        }
+
+        &:nth-child(3) {
+            display: none;
+
+            @media (min-width: 756px) {
+                display: block;
+            }
+        }
+
+        &:nth-child(4) {
+            display: none;
+
+            @media (min-width: 1006px) {
+                display: block;
+            }
+        }
+
+        &:last-child {
+            display: none;
+
+            @media (min-width: 1260px) {
+                display: block;
+            }
+        }
+    }
+
+    @media (max-width: 992px){
+    &-post:focus {
+        transform: scale(1.1, 1.1) translateY(-7px);
+        z-index: 4;
+
+        .igFeed-link::before {
+            content: '';
+            background-color: #000;
+            position: absolute;
+            display: block;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            right: 0;
+            left: 0;
+            opacity: .6;
+            z-index: 3;
+        }
+
+        .igFeed-like {
+            opacity: 1;
+        }
+
+    }
+
+}
+
+    &-link {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        z-index: 2;
+        transition: all 0.3s;
+
+        @media (min-width: 992px) {
+            &:hover .igFeed-like {
+                opacity: 1;
+            }
+        }
+
+        @media (min-width: 992px) {
+            &:hover::before {
+                content: '';
+                background-color: #000;
+                position: absolute;
+                display: block;
+                height: 100%;
+                width: 100%;
+                top: 0;
+                right: 0;
+                left: 0;
+                opacity: .6;
+                z-index: 3;
+            }
+        }
+
+    }
+
+    &-like {
+        text-align: center;
+        position: relative;
+        top: -70%;
+        opacity: 0;
+        z-index: 5;
+        transition: opacity 0.3s;
+
+        @media (min-width: 992px) {
+            top: -60%;
+        }
+    }
+
+    &-heart {
+        font-size: 20px;
+        color: #ffffff;
+
+    }
+
+    &-likes {
+        font-family: Avenir;
+        font-size: 14px;
+        font-weight: 900;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #ffffff;
+
+    }
+
+    &-image {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        z-index: 1;
+    }
+}
