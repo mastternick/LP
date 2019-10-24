@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
   <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.4/pagination.css" />
-  <!-- {{{faviconHtml}}} [ Nick ]-->
+  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/turbolinks/5.2.0/turbolinks.js" data-turbolinks-suppress-warning>
   </script>
 
@@ -28,10 +28,6 @@
   <link href="global.css" rel="stylesheet" />
   <!-- START parts CSS -->
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-
-  <!--1 navbar -->
-  <!-- <link rel="stylesheet" href="header-style.css"> -->
-  <!--0 navbar -->
 
   <link rel="stylesheet" type="text/css" href="..\2-section\2-section.css" />
   <link rel="stylesheet" type="text/css" href="..\3-section\3-section.css" />
@@ -53,7 +49,6 @@
 </head>
 
 <body>
-  <!-- <div id="google_translate_element" style="display: none"></div> -->
 
   <!-- START NAVBAR + BUTTON CONTACT -->
   <nav class="navbar">
@@ -733,10 +728,7 @@
 
     </section>
   </footer>
-  <!-- 
-  {{#each modals}}
-  {{> modalPartial }}
-  {{/each}} [ Nick ]-->
+
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" data-turbolinks-eval="false"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -758,143 +750,7 @@
   <script type="text/javascript">
 
     $(document).ready(function () {
-      /* Inject Section Specific Javascript */
-      /*
-      {{#jqueryExecutables}}
-          {{{this}}}
-      {{/jqueryExecutables}}
-      */
-      /* Parallax scrolling plugin */
-      var parollerElements = $('.my-paroller');
-      if (parollerElements.paroller) {
-        parollerElements.paroller();
-      }
-
-      /* Global Button Handling */
-      $('button[data-type="VIDEO"]').click(function () {
-        var section = $(this).closest('section');
-        var src = $(this).attr('data-src');
-        if (!src || !section) {
-          return;
-        }
-
-        $('body').append(
-          '<div id="modal-' + section.attr('id') + '" class="modal">' +
-          '<div class="modal-content">' +
-          '<div class="lightbox-video">' +
-          '<div class="video-player">' +
-          '<div style="width:1280px;height:720px;">' +
-          '<iframe frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" width="100%" height="100%" src="' +
-          src + '"></iframe>' +
-          '</div>' +
-          '</div>' +
-          '</div>' +
-          '</div>' +
-          '<a class="close"><img src="https://s3-us-west-2.amazonaws.com/luxurycoders-user-uploads/uploads/icon-close-white.png" alt="close"></a>' +
-          '</div>'
-        );
-        $('#modal-' + section.attr('id') + ' .close').click(function () {
-          $('#modal-' + section.attr('id')).remove();
-        });
-      });
-      $('button[data-type="CONTACT_US"], a[data-type="CONTACT_US"]').click(function () {
-        // TODO: Extend for an overwritten contact us
-        document.sendGoogleEvent({
-          hitType: 'event',
-          eventCategory: 'button',
-          eventAction: 'click',
-          eventLabel: 'contact'
-        });
-        var contactUs = $('#modal-global-contact-us');
-        contactUs.toggleClass('visible');
-      });
-
-      $('button[data-type="SUBSCRIBE"]').click(function () {
-        // TODO: Extend for an overwritten subscribe
-        $('#modal-global-subscribe').toggleClass('visible');
-      });
-
-      $('a[data-type="MY_ACCOUNT"]').click(function () {
-        // TODO: Extend for an overwritten my-account
-        $('#modal-global-my-account').toggleClass('visible');
-      });
-
-      $('body > .modal .close').click(function () {
-        $(this).closest('.modal').toggleClass('visible');
-      });
-
-      $('button[data-type="SHARE_POPUP"]').click(function (e) {
-        $(this).find('.share-popup').css('display', 'flex');
-        e.stopPropagation();
-      });
-
-      $('form[data-type="contact-form"]').submit(function (e) {
-        e.preventDefault();
-        var contactForm = $(this);
-        var fields = contactForm.serializeArray();
-        var values = {};
-
-        fields.forEach(function (field) {
-          values[field.name] = field.value;
-        });
-
-        var data = {
-          activity: {
-            author_email: values.email,
-            author_first_name: values.name || values.firstName,
-            author_phone: values.phone || values.phoneNumber,
-            activity_source: values.source || "CONTACT_INQUIRY",
-            comments_attributes: [{
-              text: values.message
-            }],
-          },
-        };
-
-        $.post("/mls/activities",
-          JSON.parse(JSON.stringify(data)),
-          function (data) {
-            contactForm.find('.success').removeClass('hide');
-            contactForm.find("input:not([type=\"submit\"])").val("");
-            contactForm.find("textarea").val("");
-          });
-
-        var event = {
-          hitType: 'event',
-          eventCategory: 'button',
-          eventAction: 'click',
-        };
-        switch (data.activity.activity_source) {
-          case ('NEWSLETTER_SIGNUP'):
-            event.eventLabel = 'Newsletter';
-            break;
-          case ('HOME_SEARCH'):
-            event.eventLabel = 'HomeSearch';
-            break;
-          case ('HOME_VALUE'):
-          case ('HOME_VALUATION'):
-            event.eventLabel = 'HomeValue';
-            break;
-          case ('EBOOK'):
-            event.eventLabel = 'Ebook';
-            break;
-          case ('CONTACT_INQUIRY'):
-          default:
-            // for contact forms, Marketing has requested that they see a page-view of 'thank-you' as indication of success
-            // Note that this will break if we have actual page with url of /thank-you
-            event = {
-              hitType: 'pageview',
-              page: '/thank-you',
-            }
-            break;
-        }
-        document.sendGoogleEvent(event);
-      });
-
-      $(window).click(function () {
-        $('.share-popup').css('display', 'none');
-      });
-
-   
+  
       /* Generic Navbar Handling */
       $('nav .hamburger-component').click(function () {
         $('body > div.sidemenu').toggleClass('visible');
@@ -910,11 +766,7 @@
     // slick //
     $(document).ready(function () {
 
-      // var prevButton =
-      //   '<button type="button" data-role="none" class="slick-prev" aria-label="prev"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" version="1.1"><path fill="#FFFFFF" d="M 16,16.46 11.415,11.875 16,7.29 14.585,5.875 l -6,6 6,6 z" /></svg></button>',
-      //   nextButton =
-      //   '<button type="button" data-role="none" class="slick-next" aria-label="next"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#FFFFFF" d="M8.585 16.46l4.585-4.585-4.585-4.585 1.415-1.415 6 6-6 6z"></path></svg></button>';
-
+  
       $('.slider-container').slick({
         // infinite: true,
         // autoplay: true,
