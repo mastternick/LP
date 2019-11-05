@@ -25,7 +25,8 @@ nav {
 section,
 footer {
   position: relative;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
+  z-index: 1;
 }
 
 body > div.sidemenu {

@@ -69,8 +69,8 @@ body {
 }
 
 #nc0175yxr32h6c19cd8xb7dtcng3hew8df3txgncndjjhgfb73nc .footer-col1-logo {
-  height: 51px;
-  margin-bottom: 26px;
+  height: auto;
+  margin-bottom: 0;
   -webkit-transition: -webkit-transform 0.1s;
   transition: -webkit-transform 0.1s;
   transition: transform 0.1s;
