@@ -48,8 +48,8 @@ body {
   color: white;
   top: 50%;
   left: calc(50% + 50px);
-  -webkit-transform: translate(-50%, -2%);
-          transform: translate(-50%, -2%);
+  -webkit-transform: translate(-50%, -3%);
+          transform: translate(-50%, -3%);
   bottom: 0;
   right: 0;
   margin: 0;
