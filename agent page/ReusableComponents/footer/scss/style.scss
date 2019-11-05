@@ -57,9 +57,10 @@ body {
 
 
             @media (min-width: 866px) {
-                height: 68px;
-                margin-bottom: 24px;
-            }
+                margin-bottom: 0px;
+                margin-top: -90px;
+                height: auto;
+            } 
 
             &:hover {
                 transform: scale(1.1, 1.1);

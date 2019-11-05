@@ -79,8 +79,9 @@ body {
 
 @media (min-width: 866px) {
   #nc0175yxr32h6c19cd8xb7dtcng3hew8df3txgncndjjhgfb73nc .footer-col1-logo {
-    height: 68px;
-    margin-bottom: 24px;
+    margin-bottom: 0px;
+    margin-top: -90px;
+    height: auto;
   }
 }
 

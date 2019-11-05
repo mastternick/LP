@@ -1,9 +1,817 @@
 <!DOCTYPE html>
 <html lang="en">
-<head></head>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homepage</title>
+  <meta property="og:title" content="Homepage">
+  <meta name="description" content="Homepage Description">
+  <meta property="og:description" content="Homepage Description">
+  <meta property='og:image'
+    content="https://www.google.com/logos/doodles/2019/50th-anniversary-of-the-moon-landing-6524862532157440.4-vacta.gif">
+  <meta property='og:url' content="google.com">
+  
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.4/pagination.css" />
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/turbolinks/5.2.0/turbolinks.js" data-turbolinks-suppress-warning>
+  </script>
+
+  <script type="text/javascript" data-mutate-approach="sync" src="https://kit.fontawesome.com/6219da6e02.js"></script>
+
+  <link href="homepage\_boilerplate\global.css" rel="stylesheet" />
+  <!-- START parts CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" type="text/css" href="homepage/2-section\2-section.css" />
+  <link rel="stylesheet" type="text/css" href="homepage/3-section\3-section.css" />
+  <link rel="stylesheet" type="text/css" href="homepage/4-section\4-section.css" />
+  <link rel="stylesheet" type="text/css" href="homepage/5-section\5-section.css" />
+  <link rel="stylesheet" type="text/css" href="homepage/6-section\6-section.css" />
+  <link rel="stylesheet" type="text/css" href="homepage/7-section\7-section.css" />
+
+  <link rel="stylesheet" type="text/css" href="ReusableComponents\instagramFeed\css\style.min.css">
+
+  <link rel="stylesheet" href="ReusableComponents\footer\css\style.css">
+
+  <link rel="stylesheet" href="ReusableComponents\header\style.css">
+
+
+  <!-- END parts CSS -->
+
+
+</head>
+
 <body>
-    agent page\homepage\_boilerplate\index.html
-    <br>
-    *open with live server (VS CODE)
+
+  <!-- START NAVBAR + BUTTON CONTACT -->
+  <nav class="navbar">
+
+    <div class="logo">
+      <a href="#">
+        <img src="ReusableComponents/logo/black.png" alt="">
+      </a>
+    </div>
+
+    <div class="top-menu">
+      <ul>
+        <li><a class="active" href="#">ABOUT</a></li>
+        <li><a href="#">FEATURED PROPERTIES</a></li>
+        <li><a href="#">SOLD PROPERTIES</a></li>
+        <li><a href="#">TESTIMONIALS</a></li>
+        <li><a href="#">VIDEOS</a></li>
+      </ul>
+    </div>
+
+    <div class="mobile-menu">
+      <div class="toggle">
+        <div class="hamburger-component">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-button">
+      <ul>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+    </div>
+
+  </nav>
+
+  <!-- END NAVBAR + BUTTON CONTACT -->
+
+
+  <!-- START SIDEMENU -->
+
+  <div class="sidemenu">
+    <div class="flex-sidemenu-container">
+      <div class="close-sidemenu toggle">
+        <div class="background-close-sidemenu">
+          <div class="close-sidemenu-icon">
+            <img src="https://i.ibb.co/vdCgjLF/close-icon-x.png" alt="close-icon-x" border="0">
+          </div>
+        </div>
+      </div>
+
+
+      <div class="sidebar-menu">
+        <ul>
+          <li><a class="active" href="#">About</a></li>
+          <li><a href="#">Featured Properties</a></li>
+          <li><a href="#">Sold properties</a></li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">Videos</a></li>
+        </ul>
+      </div>
+
+      <div class="socialbar">
+
+        <ul class="socialbar-text">
+
+          <div>SOCIAL</div>
+
+          <li><a href="#" class="socialbar-link">
+              <i class="fab fa-facebook-f" class="socialbar-logo"></i>
+            </a>
+          </li>
+          <li> <a href="#" class="socialbar-link">
+              <i class="fab fa-twitter" class="socialbar-logo"></i>
+            </a>
+          </li>
+          <li><a href="#" class="socialbar-link">
+              <i class="fab fa-instagram" class="socialbar-logo"></i>
+            </a>
+          </li>
+          <li> <a href="#" class="socialbar-link">
+              <i class="fab fa-linkedin-in" class="socialbar-logo"></i>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+  <!-- END SIDEMENU -->
+
+
+  <div class="mobile-contact-wrapper">
+    <!-- MOBILE CONTACT CODE HERE !-->
+  </div>
+
+  <!--start SECTION-2  -->
+  <section id="section-2">
+
+    <div class="slider-container">
+
+      <div class="slides slide-1">
+
+        <div class="container">
+          <div class="text">
+            <p class="title">Find Your Dream Home</p>
+            <p class="description">Maecenas faucibus mollis interdum. Donec id elit non mi porta gravida at eget metus.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas faucibus mollis interdum. </p>
+            <a href="#" class="button">Search Properties</a>
+            <div class="arrows">
+              <div class="prev"></div>
+              <div class="next"></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="slides slide-2">
+        <div class="container">
+          <div class="text">
+            <p class="title">Find Your Dream Home</p>
+            <p class="description">Maecenas faucibus mollis interdum. Donec id elit non mi porta gravida at eget metus.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas faucibus mollis interdum. </p>
+            <a href="#" class="button">Search Properties</a>
+            <div class="arrows">
+              <div class="prev"></div>
+              <div class="next"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!--end SECTION-2 -->
+
+
+  <!--start SECTION-3 -->
+
+  <section id="section-3">
+
+    <div class="about">
+      <div class="photo">
+        <!-- <img src="https://i.ibb.co/dmHc0Q0/profile-photo.jpg" alt=""> -->
+      </div>
+      <div class="description">
+        <div class="text">
+          <p class="name">Marc Mills</p>
+          <p class="title">Licensed Real Estate Salesperson</p>
+          <p class="details">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vivamus
+            sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Morbi leo risus, porta ac consectetur ac,
+            vestibulum at eros.
+            Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+          <a class="button" href="#">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!--end SECTION-3 -->
+
+
+  <!--start SECTION-4 -->
+
+  <section id="section-4">
+
+
+    <div class="slider-container-2">
+
+      <div class="slides slide-1">
+
+        <div class="container">
+
+          <div class="bottom-blocks">
+            <div class="box">
+              <div class="pad">
+                <p class="title">Porta Condimentum</p>
+                <p class="price">$23,656,000</p>
+                <p class="description">Aenean eu leo quam. Pellentesque ornare sem lacinia
+                  quam venenatis vestibulum. Vivamus sagittis lacus</p>
+                <div class="info">
+                  <div class="icon-and-text">
+                    <img class="icon1" src="http://cdn.onlinewebfonts.com/svg/img_425511.png" />
+                    <p class="text">3 baths</p>
+                  </div>
+                  <div class="icon-and-text">
+                    <img class="icon2" src="http://cdn.onlinewebfonts.com/svg/img_431668.png" />
+                    <p class="text">3 beds</p>
+                  </div>
+                  <div class="icon-and-text">
+                    <img class="icon3" src="http://cdn.onlinewebfonts.com/svg/img_404037.png" />
+                    <p class="text">3425 sq.ft.</p>
+                  </div>
+                </div>
+                <a class="link" href="#">VIEW PROPERTY DETAILS <i class="fa fa-angle-right"></i></a>
+              </div>
+            </div>
+
+            <div class="arrows-container">
+              <div class="arrows">
+                <div class="prev-2"></div>
+                <div class="next-2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="slides slide-2">
+
+        <div class="container">
+
+          <div class="bottom-blocks">
+            <div class="box">
+              <div class="pad">
+                <p class="title">Luxury Living</p>
+                <p class="price">$32,656,000</p>
+                <p class="description">Aenean eu leo quam. Pellentesque ornare sem lacinia
+                  quam venenatis vestibulum. Vivamus sagittis lacus</p>
+                <div class="info">
+                  <div class="icon-and-text">
+                    <img class="icon1" src="http://cdn.onlinewebfonts.com/svg/img_425511.png" />
+                    <p class="text">2 baths</p>
+                  </div>
+                  <div class="icon-and-text">
+                    <img class="icon2" src="http://cdn.onlinewebfonts.com/svg/img_431668.png" />
+                    <p class="text">4 beds</p>
+                  </div>
+                  <div class="icon-and-text">
+                    <img class="icon3" src="http://cdn.onlinewebfonts.com/svg/img_404037.png" />
+                    <p class="text">38220 sq.ft.</p>
+                  </div>
+                </div>
+                <a class="link" href="#">VIEW PROPERTY DETAILS <i class="fa fa-angle-right"></i></a>
+              </div>
+            </div>
+
+            <div class="arrows-container">
+              <div class="arrows">
+                <div class="prev-2"></div>
+                <div class="next-2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+  <!--end SECTION-4 -->
+
+
+  <!--start SECTION-5 -->
+
+  <section id="section-5">
+    <div class="wrapper">
+      <h2 class="heading">Featured Neighborhoods</h2>
+      <p class="text">
+        Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis
+        vestibulum. Vivamus sagittis lacus vel augue.
+      </p>
+      <div class="container-images">
+        <div class="image" id="img-1">
+          <div class="overlay">
+            <h4 class="title-overlay">Chelsea</h4>
+            <p class="text-overlay">
+              Aenean eu leo quam. Pellentesque ornare sem lacinia quam
+              venenatis vestibulum. Vivamus sagittis lacus vel augue.
+            </p>
+            <div class="btn-explore-desktop">
+              <a href="#">Explore</a>
+            </div>
+          </div>
+          <div class="btn-explore-mobile">
+            <a href="#">Explore Chelsea</a>
+          </div>
+        </div>
+
+        <div class="display-column-desktop">
+          <div class="image" id="img-2">
+            <div class="overlay">
+              <h4 class="title-overlay" id="title-small-overlay">Chelsea</h4>
+              <p class="text-overlay" id="text-small-overlay">
+                Aenean eu leo quam. Pellentesque ornare sem lacinia quam
+                venenatis vestibulum. Vivamus sagittis lacus vel augue.
+              </p>
+              <div class="btn-explore-desktop">
+                <a href="#">Explore</a>
+              </div>
+            </div>
+            <div class="btn-explore-mobile">
+              <a href="#">Explore Chelsea</a>
+            </div>
+          </div>
+
+          <div class="image" id="img-3">
+            <div class="overlay">
+              <h4 class="title-overlay" id="title-small-overlay">Chelsea</h4>
+              <p class="text-overlay" id="text-small-overlay">
+                Aenean eu leo quam. Pellentesque ornare sem lacinia quam
+                venenatis vestibulum. Vivamus sagittis lacus vel augue.
+              </p>
+              <div class="btn-explore-desktop">
+                <a href="#">Explore</a>
+              </div>
+            </div>
+            <div class="btn-explore-mobile">
+              <a href="#">Explore Chelsea</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="image" id="img-4">
+          <div class="overlay">
+            <h4 class="title-overlay">Chelsea</h4>
+            <p class="text-overlay">
+              Aenean eu leo quam. Pellentesque ornare sem lacinia quam
+              venenatis vestibulum. Vivamus sagittis lacus vel augue.
+            </p>
+            <div class="btn-explore-desktop">
+              <a href="#">Explore</a>
+            </div>
+          </div>
+          <div class="btn-explore-mobile">
+            <a href="#">Explore Chelsea</a>
+          </div>
+        </div>
+      </div>
+      <div class="btn"><a href="#">See More</a></div>
+    </div>
+  </section>
+  <!--end SECTION-5 -->
+
+
+  <!--start SECTION-6 -->
+
+  <section id="section-6">
+
+    <div class="title-section">
+      <p>Featured Blog Posts</p>
+    </div>
+
+    <div class="container-slider-posts">
+
+      <div class="arrow-left">
+        <div class="prev-3 slick-arrow"></div>
+      </div>
+
+      <div class="arrow-right">
+        <div class="next-3 slick-arrow"></div>
+      </div>
+
+      <div class="slider-container-3">
+
+        <div class="slides slide-1">
+
+          <div class="container">
+            <div class="posts post-1">
+              <div class="featured-img"></div>
+              <div class="content">
+                <a href="" class="post-link">
+                  <p class="title">Ridiculus Sollicitudin</p>
+                </a>
+                <p class="subtitle">By Mar Rueda / JANUARY 23, 2019 </p>
+                <p class="text">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vivamus
+                  sagittis lacus.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slides slide-2">
+
+          <div class="container">
+            <div class="posts post-2">
+              <div class="featured-img  trending" trending-attr="Trending"></div>
+              <div class="content">
+                <a href="#" class="post-link">
+                  <p class="title">Lorem Etiam</p>
+                </a>
+                <p class="subtitle">By Mar Rueda / JANUARY 23, 2019 </p>
+                <p class="text">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vivamus
+                  sagittis lacus.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slides slide-3">
+          <div class="container">
+            <div class="posts post-2">
+              <div class="featured-img trending" trending-attr="Trending"></div>
+              <div class="content">
+                <a href="" class="post-link">
+                  <p class="title">Lorem Etiam</p>
+                </a>
+                <p class="subtitle">By Mar Rueda / JANUARY 23, 2019 </p>
+                <p class="text">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vivamus
+                  sagittis lacus.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slides slide-4">
+          <div class="container">
+            <div class="posts post-1">
+              <div class="featured-img"></div>
+              <div class="content">
+                <a href="#" class="post-link">
+                  <p class="title">Ridiculus Sollicitudin</p>
+                </a>
+                <p class="subtitle">By Mar Rueda / JANUARY 23, 2019 </p>
+                <p class="text">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vivamus
+                  sagittis lacus.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="see-more">
+
+      <a href="" class="button">See More Posts</a>
+
+    </div>
+
+
+
+  </section>
+
+  <!--end SECTION-6 -->
+
+
+  <!--start SECTION-7 -->
+
+  <section id="section-7">
+    <div class="video-wrapper">
+      <video poster="http://cdn.home-designing.com/wp-content/uploads/2018/11/luxury-living-room-ideas.jpg">
+        <source
+          src="https://ak4.picdn.net/shutterstock/videos/17642164/preview/stock-footage-modern-luxury-house-with-pool-at-dawn.webm"
+          type="video/mp4" />
+      </video>
+      <svg class="video-overlay-play-button videoPlayButton" viewBox="0 0 200 200" alt="Play video">
+        <circle cx="100" cy="100" r="65" fill="#fff" />
+        <polygon points="95, 85 95, 115 117, 100" fill="#000" />
+      </svg>
+      <h5 class="play-text">PLAY VIDEO</h5>
+    </div>
+    <script type="text/javascript">
+      var videoPlayButton = document.getElementsByClassName(
+          "videoPlayButton"
+        )[0],
+        text = document.getElementsByClassName("play-text")[0],
+        videoWrapper = document.getElementsByClassName("video-wrapper")[0],
+        video = document.getElementsByTagName("video")[0],
+        videoMethods = {
+          renderVideoPlayButton: function () {
+            if (videoWrapper.contains(video)) {
+              video.classList.add("has-media-controls-hidden");
+              video.classList.add("brightness");
+              videoPlayButton = document.getElementsByClassName(
+                "video-overlay-play-button"
+              )[0];
+              videoPlayButton.addEventListener(
+                "click",
+                this.hideVideoPlayButton
+              );
+            }
+          },
+          hideVideoPlayButton: function () {
+            video.play();
+            videoPlayButton.classList.add("is-hidden");
+            text.classList.add("is-hidden");
+            video.classList.remove("brightness");
+            video.classList.remove("has-media-controls-hidden");
+            video.setAttribute("controls", "controls");
+          }
+        };
+      videoMethods.renderVideoPlayButton();
+    </script>
+  </section>
+
+  <!--end SECTION-7 -->
+  <section id="g976405ynmwd93ueg46vn8yreuy4n8ruhnfe3ug87hfe3uni">
+    <div class="wrapper">
+      <div class="igFeed">
+        <header class="igFeed-header">
+          <h1 class="igFeed-title">
+            Instagram Feed
+          </h1>
+          <p class="igFeed-description">
+            Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vivamus sagittis
+            lacus vel augue laoreet rutrum.
+          </p>
+        </header>
+        <div class="igFeed-container">
+          <div class="igFeed-post" tabindex="0">
+            <div class="igFeed-link">
+              <div class="igFeed-image" style="background-image: url('https://picsum.photos/272/251')">
+              </div>
+
+              <div class="igFeed-like">
+                <i class="far fa-heart igFeed-heart"></i>
+                <p class="igFeed-likes">
+                  772K LIKES
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="igFeed-post" tabindex="0">
+            <div class="igFeed-link">
+              <div class="igFeed-image" style="background-image: url('https://picsum.photos/273/252')">
+              </div>
+
+              <div class="igFeed-like">
+                <i class="far fa-heart igFeed-heart"></i>
+                <p class="igFeed-likes">
+                  772K LIKES
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="igFeed-post" tabindex="0">
+            <div class="igFeed-link">
+              <div class="igFeed-image" style="background-image: url('https://picsum.photos/274/253')">
+              </div>
+
+              <div class="igFeed-like">
+                <i class="far fa-heart igFeed-heart"></i>
+                <p class="igFeed-likes">
+                  772K LIKES
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="igFeed-post">
+            <div class="igFeed-link">
+              <div class="igFeed-image" style="background-image: url('https://picsum.photos/275/254')">
+              </div>
+
+              <div class="igFeed-like">
+                <i class="far fa-heart igFeed-heart"></i>
+                <p class="igFeed-likes">
+                  772K LIKES
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="igFeed-post">
+            <div class="igFeed-link">
+              <div class="igFeed-image" style="background-image: url('https://picsum.photos/276/255')">
+              </div>
+
+              <div class="igFeed-like">
+                <i class="far fa-heart igFeed-heart"></i>
+                <p class="igFeed-likes">
+                  772K LIKES
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--start SECTION-8 -->
+
+
+  <!--end SECTION-8 -->
+
+
+
+
+  <footer>
+    <section id="nc0175yxr32h6c19cd8xb7dtcng3hew8df3txgncndjjhgfb73nc">
+      <div class="wrapper">
+        <footer class="footer">
+          <div class="footer-container">
+            <div class="footer-col1">
+              <img src="ReusableComponents/logo/white.png" class="footer-col1-logo" alt="Logo">
+
+              <p class="footer-col1-text">
+                Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vivamus
+                sagittis
+                lacus vel augue laoreetT rutrum faucibus dolor auctor. Morbi leo risus, porta ac consectetur
+                ac,
+                vestibulum at eros.
+              </p>
+
+              <div class="footer-col1-socialbar">
+                <span class="footer-col1-socialbar-text">
+                  SOCIAL
+                </span>
+
+                <a href="#" class="footer-col1-socialbar-link">
+                  <i class="fab fa-facebook-f" class="footer-col1-socialbar-logo"></i>
+                </a>
+
+                <a href="#" class="footer-col1-socialbar-link">
+                  <i class="fab fa-twitter" class="footer-col1-socialbar-logo"></i>
+                </a>
+
+                <a href="#" class="footer-col1-socialbar-link">
+                  <i class="fab fa-instagram" class="footer-col1-socialbar-logo"></i>
+                </a>
+
+                <a href="#" class="footer-col1-socialbar-link">
+                  <i class="fab fa-linkedin-in" class="footer-col1-socialbar-logo"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="footer-col2">
+              <h2 class="footer-col2-title">
+                Newsletter
+              </h2>
+
+              <p class="footer-col2-text">
+                Subscribe to our Newsletter for latest news and updates. Stay tuned!
+              </p>
+
+              <form>
+                <input class="footer-col2-input-text" type="text" name="email" placeholder="Email adress">
+                <input class="footer-col2-input-submit" type="submit" value="SUBSCRIBE">
+              </form>
+
+              <div class="footer-col2-socialbar">
+                <p class="footer-col1-socialbar-text">
+                  SOCIAL
+                </p>
+
+                <a href="#" class="footer-col1-socialbar-link">
+                  <i class="fab fa-facebook-f" class="footer-col1-socialbar-logo"></i>
+                </a>
+
+                <a href="#" class="footer-col1-socialbar-link">
+                  <i class="fab fa-twitter" class="footer-col1-socialbar-logo"></i>
+                </a>
+
+                <a href="#" class="footer-col1-socialbar-link">
+                  <i class="fab fa-instagram" class="footer-col1-socialbar-logo"></i>
+                </a>
+
+                <a href="#" class="footer-col1-socialbar-link">
+                  <i class="fab fa-linkedin-in" class="footer-col1-socialbar-logo"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-row">
+            <a href="#" class="footer-row-link">ABOUT</a>
+            <a href="#" class="footer-row-link">FEATURED PROPERTIES</a>
+            <a href="#" class="footer-row-link">SOLD PROPERTIES</a>
+            <a href="#" class="footer-row-link">TESTIMONIALS</a>
+            <a href="#" class="footer-row-link">VIDEOS</a>
+          </div>
+        </footer>
+
+      </div>
+
+    </section>
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" data-turbolinks-eval="false"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script type="text/javascript" data-turbolinks-eval="false"
+    src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script type="text/javascript" data-turbolinks-eval="false"
+    src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js"></script>
+  <script type="text/javascript" data-turbolinks-eval="false"
+    src="https://cdn.jsdelivr.net/npm/handlebars-intl@1.1.2/dist/handlebars-intl.min.js"></script>
+  <script type="text/javascript" data-turbolinks-eval="false"
+    src="https://cdnjs.cloudflare.com/ajax/libs/superagent/4.1.0/superagent.min.js"></script>
+  <script type="text/javascript" data-turbolinks-eval="false"
+    src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script type="text/javascript" data-turbolinks-eval="false"
+    src="https://d1e1jt2fj4r8r.cloudfront.net/javascript/jquery.paroller.min.js"></script>
+  <script type="text/javascript" data-turbolinks-eval="false"
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADrq0A6j8Y9Uh1I5m3_yWdd4dOf-ltpJU&libraries=places"></script>
+
+  <script type="text/javascript">
+
+    $(document).ready(function () {
+  
+      /* Generic Navbar Handling */
+      $('nav .hamburger-component').click(function () {
+        $('body > div.sidemenu').toggleClass('visible');
+      });
+      $('body > div.sidemenu .toggle').click(function () {
+        $('body > div.sidemenu').toggleClass('visible');
+      });
+     
+
+    });
+
+
+    // slick //
+    $(document).ready(function () {
+
+  
+      $('.slider-container').slick({
+        // infinite: true,
+        // autoplay: true,
+        prevArrow: $('.prev'),
+        nextArrow: $('.next'),
+        // arrows: true,
+
+      });
+
+      $('.slider-container-2').slick({
+        // infinite: true,
+        // autoplay: true,
+        prevArrow: $('.prev-2'),
+        nextArrow: $('.next-2'),
+        // arrows: true,
+
+      });
+
+      $('.slider-container-3').slick({
+        // infinite: true,
+        // autoplay: true,
+        prevArrow: $('.prev-3'),
+        nextArrow: $('.next-3'),
+        // arrows: true,
+        slidesToShow: 2,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          },          
+        ]
+      });
+    });
+  </script>
 </body>
+
 </html>
