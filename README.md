@@ -1,7 +1,7 @@
 # LP Agent
  A complete agent homepage
 <br>
-The home page sections, header, menu and footer, all are created by myself with dedication and perfection.
+The home page sections, header, menu and footer, all are created by myself with dedication and perfection.<br>
 It's responsive and looks great on all devices.
 <br>
 <a href="https://mastternick.ml/projects/agent-page/" target="_blank">Demo</a> 
